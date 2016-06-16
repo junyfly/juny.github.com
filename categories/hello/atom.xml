@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Hello | 炒米研究院]]></title>
+  <link href="http://junyfly.github.io/categories/hello/atom.xml" rel="self"/>
+  <link href="http://junyfly.github.io/"/>
+  <updated>2016-06-16T16:51:56+08:00</updated>
+  <id>http://junyfly.github.io/</id>
+  <author>
+    <name><![CDATA[吴俊宜]]></name>
+    <email><![CDATA[junflyappwill@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello world]]></title>
+    <link href="http://junyfly.github.io/hello-world.html"/>
+    <updated>2013-12-30T00:07:35+08:00</updated>
+    <id>http://junyfly.github.io/hello-world</id>
+    <content type="html"><![CDATA[<p><img class="<a" src="href="http://farm3.staticflickr.com/2832/12009122516_5f7452855e_o.jpg">http://farm3.staticflickr.com/2832/12009122516_5f7452855e_o.jpg</a>" title="" ></p>
+
+<h2>Hello world!</h2>
+]]></content>
+  </entry>
+  
+</feed>

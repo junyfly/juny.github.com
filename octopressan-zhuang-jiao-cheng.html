@@ -1,0 +1,250 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Octopress安装教程 - 炒米研究院</title>
+<meta name="author" content="吴俊宜">
+
+
+<meta name="description" content="Octopress 是一个非常轻量级的静态博客系统，其初衷是为码农专门设计的。
+相比冗余的Wordpress系统，Octopress更适合用于码字，而不必在乎如何展现。
+书写发布皆可在终端一气呵成，配合Markdown标记语言更是让页面美轮美奂。 对于我这个伪Blogger来说，用什么都无所谓的 &hellip;">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="/atom.xml" rel="alternate" title="炒米研究院" type="application/atom+xml">
+<link rel="canonical" href="">
+<link href="" rel="shortcut icon">
+<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script async="true" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">炒米研究院</a></h1>
+<nav id="main-nav"><ul class="main">
+	<li><a href="/">Home</a></li>
+	<li><a href="/ted.html">TedSay</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+	<li><a href="/about.html">About</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul class="main">
+	<li><a href="/">Home</a></li>
+	<li><a href="/ted.html">TedSay</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+	<li><a href="/about.html">About</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="http://google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:junyfly.github.io">
+			</form>
+		</div>
+	</div>
+</nav>
+<nav id="sub-nav" class="alignright">
+	<div class="social">
+		
+		
+		
+		
+    
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+    
+	</div>
+	<form class="search" action="http://google.com/search" method="get">
+		<input class="alignright" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="site:junyfly.github.io">
+	</form>
+</nav>
+
+</header>
+	
+		
+	
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">Octopress安装教程</h2>
+	<div class="entry-content"><p><img src="http://farm3.staticflickr.com/2857/11725426803_2129e2abd8_h.jpg"></p>
+
+<blockquote><p>Octopress 是一个非常轻量级的静态博客系统，其初衷是为码农专门设计的。
+相比冗余的Wordpress系统，Octopress更适合用于码字，而不必在乎如何展现。
+书写发布皆可在终端一气呵成，配合Markdown标记语言更是让页面美轮美奂。</p></blockquote>
+
+<p>对于我这个伪Blogger来说，用什么都无所谓的。但是看到Octopress那迷人的简洁，
+还是情不自禁的折腾起来，把搁置了半年多的博客重新拾起。下面就简单记录一下我的整个安装过程
+任何的开源软件都会有非常健全的Documentation可以参考的，按理说无需重复造轮子。
+不过关于Octopress的中文资料并不多，简单记录一下过程以做备忘。</p>
+
+<!-- more -->
+
+
+<h3>安装前的准备</h3>
+
+<p>Mac先安装一个软件安装工具Homebrew，类似于dpkg 软件管理工具，有了它
+mac下也能用命令行install软件,这里不赘述如何安装他了
+<a href="https://github.com/Homebrew/homebrew">安装请看这里</a></p>
+
+<p>octopress 是基于Jekyll的，集合了更多的插件和功能。Octopress的源码寄存于github
+安装和更新都需要git这个工具，Mac和大多数Linux系统都自带有它，没有的自行安装即可。</p>
+
+<p>Octopress需要有Ruby环境的支持，安装一个RVM来管理自己的Ruby版本。安装使用请看Rubychina的<a href="http://ruby-china.org/wiki/install_ruby_guide">wiki</a>
+使用.</p>
+
+<h3>开始安装Octopress</h3>
+
+<p>找到一个合适的位置来Clone Octopress项目</p>
+
+<pre><code>git clone git://github.com/imathis/octopress.git octopress   #从GitHub把octopress clone到本地octopress
+cd octopress
+</code></pre>
+
+<p>安装Octopress环境</p>
+
+<pre><code>gem install bundler  #在本地octopress 目录下执行
+bundle install 
+</code></pre>
+
+<p>在这一步如果出现问题的话，按着报错的内容排错就可以了。如果bundle install 半天没反应的话，那就把ruby的镜像更换为淘宝国内的镜像。
+具体方法参见<a href="http://ruby.taobao.org/">淘宝ruby镜像</a></p>
+
+<p>到这里基本上就安装完成了，下面再安装一下默认的主题就可以review了。</p>
+
+<pre><code>rake install #安装默认的主题，关于主题的更换以后再做讨论。
+</code></pre>
+
+<p>如果没有任何报错的话，那么再执行一个命令就可以看到你的octo博客了。</p>
+
+<pre><code>rake preview #打开打开浏览器，输入http://localhost:4000 看看
+ctrl+c #预览完了退出预览
+</code></pre>
+
+<p>哦了，程序猿的第一句话都是hello world的，那么下面就来说一下怎么发布hello world。</p>
+
+<pre><code>rake new_post['title'] #新建一个文章，将标题更换为你喜欢的标题
+vim source/_post #新建Markdown 文件就都会存储在这里 用你喜欢的编辑器编辑呗
+</code></pre>
+
+<p>输入你想要的内容，然后保存退出。Markdown 语法请参考这里<a href="http://wowubuntu.com/markdown/">Markdown 语法</a>
+接下来就是要将Markdown 文件生成html 静态网页，这就是jekll的作用了，还是一句命令就了事。</p>
+
+<pre><code>rake generate #生成静态页面
+rake preview #打开自带的服务器，在本地预览 http://localhost:4000
+</code></pre>
+
+<p>如果你能看到你的页面，那么恭喜你，成功了。</p>
+
+<hr />
+
+<p>有时间，再详细补充一下安装过程和配置过程</p>
+</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-03T13:44:31+08:00" pubdate data-updated="true">Jan 3<span>rd</span>, 2014</time></div>
+	<div class="tags">
+
+</div>
+	
+	<div class="comments"><a href="#disqus_thread">Comments</a></div>
+	
+</div>
+</article>
+
+	<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+      <a class="jiathis_button_tsina">新浪微博</a>
+        <a class="jiathis_button_twitter">Twitter</a>
+          <a class="jiathis_button_googleplus">Google+</a>
+            <a class="jiathis_button_weixin">微信</a>
+              <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+                <a class="jiathis_counter_style"></a>
+              </div>
+              <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+              <!-- JiaThis Button END -->
+
+
+
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2016
+
+    吴俊宜
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'Juny';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://junyfly.github.io/octopressan-zhuang-jiao-cheng.html';
+        var disqus_url = 'http://junyfly.github.io/octopressan-zhuang-jiao-cheng.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//go.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-46774480-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+</body>
+</html>
