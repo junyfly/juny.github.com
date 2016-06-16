@@ -4,7 +4,11 @@
   <title><![CDATA[Category: 俊宜的博客 | 炒米研究院]]></title>
   <link href="http://junyfly.github.io/categories/jun-yi-de-bo-ke/atom.xml" rel="self"/>
   <link href="http://junyfly.github.io/"/>
+<<<<<<< HEAD
   <updated>2016-06-16T17:03:16+08:00</updated>
+=======
+  <updated>2016-06-16T16:36:51+08:00</updated>
+>>>>>>> d8e1ab25c915b53449dbfc997c75234df50c74f5
   <id>http://junyfly.github.io/</id>
   <author>
     <name><![CDATA[吴俊宜]]></name>
@@ -14,6 +18,27 @@
 
   
   <entry>
+<<<<<<< HEAD
+=======
+    <title type="html"><![CDATA[这是测试]]></title>
+    <link href="http://junyfly.github.io/zhe-shi-ce-shi.html"/>
+    <updated>2014-09-06T16:14:45+08:00</updated>
+    <id>http://junyfly.github.io/zhe-shi-ce-shi</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hosting_on_github_pages]]></title>
+    <link href="http://junyfly.github.io/hosting-on-github-pages.html"/>
+    <updated>2014-05-18T11:33:16+08:00</updated>
+    <id>http://junyfly.github.io/hosting-on-github-pages</id>
+    <content type="html"><![CDATA[<h2>This is my first post on github pages.</h2>
+]]></content>
+  </entry>
+  
+  <entry>
+>>>>>>> d8e1ab25c915b53449dbfc997c75234df50c74f5
     <title type="html"><![CDATA[咎由自取的裸辞]]></title>
     <link href="http://junyfly.github.io/jiu-you-zi-qu-de-luo-ci.html"/>
     <updated>2014-03-31T16:26:48+08:00</updated>
@@ -154,6 +179,7 @@
 ]]></content>
   </entry>
   
+<<<<<<< HEAD
   <entry>
     <title type="html"><![CDATA[从这里开始]]></title>
     <link href="http://junyfly.github.io/cong-zhe-li-kai-shi.html"/>
@@ -239,4 +265,6 @@ LightBox2（图片显示JS插件）。修改主题的时间其实大部分都耗
 ]]></content>
   </entry>
   
+=======
+>>>>>>> d8e1ab25c915b53449dbfc997c75234df50c74f5
 </feed>
